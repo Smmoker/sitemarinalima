@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Marina Lima | Ginecologista em João Monlevade - MG</title>
+    <meta name="description" content="Cuidado ginecológico acolhedor, seguro e individualizado em João Monlevade. Agende sua consulta com a Dra. Marina Lima e viva com mais liberdade.">
+    
+    <!-- Google Fonts: Martel, Chivo, Rasa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;1,400&family=Martel:wght@300;400;600;700&family=Rasa:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        creme: '#FBF9F6',
+                        marsala: '#6B2D31',
+                        'marsala-hover': '#522024',
+                        rosaclaro: '#F4EBEB',
+                        texto: '#2C2A28',
+                        'texto-light': '#595550'
+                    },
+                    fontFamily: {
+                        martel: ['Martel', 'serif'],
+                        chivo: ['Chivo', 'sans-serif'],
+                        rasa: ['Rasa', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Animações sutis e estilos base */
+        body { background-color: #FBF9F6; color: #2C2A28; }
+        .fade-in { animation: fadeIn 1.2s ease-in-out; }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="font-chivo antialiased selection:bg-rosaclaro selection:text-marsala">
+
+    <!-- WhatsApp Flutuante Mobile/Desktop -->
+    <a href="https://wa.me/5531993310246" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-105 transition-transform duration-300 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.88-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.347-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.876 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    </a>
+
+    <!-- Navbar Minimalista -->
+    <nav class="w-full py-6 px-6 lg:px-16 flex justify-between items-center fade-in bg-creme">
+        <a href="#" class="block w-48 md:w-56">
+            <img src="./Logo.png" alt="Dra. Marina Lima Ginecologista" class="w-full h-auto object-contain">
+        </a>
+        <div class="hidden md:flex gap-8 text-sm font-medium tracking-wide">
+            <a href="#mulher-liberdade" class="hover:text-marsala transition-colors">Conceito</a>
+            <a href="#sobre" class="hover:text-marsala transition-colors">Sobre</a>
+            <a href="#experiencia" class="hover:text-marsala transition-colors">A Experiência</a>
+            <a href="#faq" class="hover:text-marsala transition-colors">Dúvidas</a>
+        </div>
+        <a href="https://wa.me/5531993310246" class="hidden md:block bg-marsala text-creme px-6 py-2 rounded-md text-sm tracking-widest uppercase hover:bg-marsala-hover transition-colors">
+            Agendar
+        </a>
+    </nav>
+
+    <!-- SEÇÃO 01: Hero -->
+    <section class="min-h-[85vh] flex flex-col md:flex-row items-center justify-center px-6 lg:px-16 py-12 gap-12 lg:gap-16 fade-in">
+        <div class="w-full md:w-1/2 max-w-xl">
+            <p class="font-rasa text-marsala text-sm tracking-widest uppercase mb-4">Ginecologista em João Monlevade — MG</p>
+            <h1 class="font-martel text-5xl md:text-6xl lg:text-7xl leading-tight mb-6 text-texto">
+                Conte comigo para cuidar de você, em todas as fases da vida.
+            </h1>
+            <p class="font-chivo text-lg text-texto-light leading-relaxed mb-10">
+                Uma abordagem médica humana e individualizada para que você possa viver como uma mulher com liberdade, segurança e autonomia sobre o próprio corpo.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+                <a href="https://wa.me/5531993310246" class="bg-marsala text-creme px-8 py-4 rounded-md text-sm font-semibold tracking-widest uppercase hover:bg-marsala-hover transition-colors w-full sm:w-auto text-center shadow-md">
+                    Comece Aqui
+                </a>
+                <p class="font-chivo text-xs text-texto-light opacity-80 mt-4 sm:mt-0 sm:ml-4">
+                    CRM-MG 80814<br>RQE 66710
+                </p>
+            </div>
+        </div>
+        
+        <!-- Alteração: container ajustado (w-[35%] e h-[700px]) para forçar a orientação vertical (em pé) mantendo o desenho -->
+        <div class="w-full sm:w-3/4 md:w-5/12 lg:w-[35%] relative h-[550px] md:h-[700px] rounded-tl-[100px] rounded-br-[100px] overflow-hidden shadow-xl mx-auto md:mx-0">
+            <!-- Foto da Dra Marina (Hero) -->
+            <img src="./Hero.jpg" alt="Dra. Marina Lima Ginecologista" class="w-full h-full object-cover object-center opacity-90 hover:opacity-100 transition-opacity duration-700">
+            <div class="absolute inset-0 bg-marsala mix-blend-overlay opacity-10"></div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 02: Conexão -->
+    <section class="bg-rosaclaro py-24 px-6 lg:px-16 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="font-martel text-4xl md:text-5xl text-marsala mb-8">Cuidar de você vai muito além de uma consulta.</h2>
+            <p class="font-chivo text-lg text-texto leading-relaxed">
+                Eu sei que a saúde íntima carrega dúvidas, inseguranças e, muitas vezes, silêncios. Meu papel é oferecer um ambiente seguro, onde você seja ouvida sem pressa e sem julgamentos. Onde cada sintoma importa, e onde a sua história guia o nosso cuidado.
+            </p>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 03: Mulher com Liberdade -->
+    <section id="mulher-liberdade" class="py-24 px-6 lg:px-16 bg-creme">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="w-full md:w-1/2 h-[600px] rounded-lg overflow-hidden relative shadow-lg">
+                <!-- Foto Liberdade -->
+                <img src="./Liberdade.jpg" alt="Cuidado feminino e liberdade" class="w-full h-full object-cover object-center">
+            </div>
+            <div class="w-full md:w-1/2">
+                <h2 class="font-rasa text-5xl text-marsala mb-10">Mulher com Liberdade</h2>
+                <ul class="space-y-6 font-chivo text-base text-texto-light">
+                    <li class="flex items-start gap-4">
+                        <span class="text-marsala mt-1">✦</span>
+                        <div>
+                            <strong class="text-texto font-semibold block mb-1">Saúde ginecológica e prevenção</strong>
+                            <span>Climatério, exames, prevenção e saúde cardiovascular/metabólica.</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="text-marsala mt-1">✦</span>
+                        <div>
+                            <strong class="text-texto font-semibold block mb-1">Mente e emoções</strong>
+                            <span>Estresse, sobrecarga, sono, ansiedade, autoestima e saúde emocional.</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="text-marsala mt-1">✦</span>
+                        <div>
+                            <strong class="text-texto font-semibold block mb-1">Sexualidade e conexão</strong>
+                            <span>Desejo, autoconhecimento, relacionamento e conexão.</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="text-marsala mt-1">✦</span>
+                        <div>
+                            <strong class="text-texto font-semibold block mb-1">Corpo e estilo de vida</strong>
+                            <span>Alimentação, movimento, composição corporal e hábitos.</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="text-marsala mt-1">✦</span>
+                        <div>
+                            <strong class="text-texto font-semibold block mb-1">Autocuidado e propósito</strong>
+                            <span>Rotina, tempo para si, autoestima, lazer e projetos pessoais.</span>
+                        </div>
+                    </li>
+                </ul>
+                <p class="font-martel text-2xl italic text-marsala mt-10 border-l-2 border-marsala pl-6">
+                    "A verdadeira liberdade começa quando você se sente bem e segura dentro do próprio corpo."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 04: Sobre a Dra. Marina -->
+    <section id="sobre" class="py-24 px-6 lg:px-16 bg-white">
+        <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-16">
+            <!-- Texto (lado esquerdo) -->
+            <div class="w-full md:w-1/2 flex flex-col justify-center">
+                <p class="font-rasa text-marsala tracking-widest uppercase text-sm mb-4">Sobre a Profissional</p>
+                <h2 class="font-martel text-5xl text-texto mb-8">Prazer, Marina.</h2>
+                <div class="space-y-4 font-chivo text-texto-light leading-relaxed mb-10">
+                    <p>Médica ginecologista e obstetra pela Universidade Federal de Viçosa, apaixonada por cuidar de mulheres, da fertilidade à menopausa. Seu lema “Mulher Com Liberdade” guia sua missão como médica: ajudar mulheres a se libertarem de doenças e problemas de saúde, além da desinformação, medos e tabus que envolvem a saúde feminina.</p>
+                    <p>Ao longo da carreira, sempre teve como foco oferecer um atendimento completo, com acolhimento e atenção à individualidade de cada paciente. Acredita que a saúde feminina vai muito além dos cuidados ginecológicos, envolvendo também o bem-estar físico, emocional e social da mulher.</p>
+                    <p>Atua especialmente nas áreas de planejamento reprodutivo (pré-concepcional e contracepção, incluindo aconselhamento, inserção de DIUs e Implanon), climatério e menopausa, sexualidade feminina, infecções ginecológicas, alterações no ciclo menstrual como endometriose e síndrome dos ovários policísticos, além da rotina de cuidados em saúde da mulher e da prevenção e tratamento das doenças ginecológicas em geral.</p>
+                    <p>Seu objetivo é ser parceira no cuidado da saúde de suas pacientes, oferecendo escuta ativa, dedicação e um atendimento transformador em cada consulta.</p>
+                </div>
+                
+                <div class="bg-rosaclaro p-6 rounded-md">
+                    <p class="font-rasa text-marsala mb-2">Credenciais Médicas</p>
+                    <ul class="font-chivo text-sm text-texto space-y-2">
+                        <li>• Médica Ginecologista e Obstetra</li>
+                        <li>• CRM-MG 80814 | RQE 66710</li>
+                        <li>• Formada pela Universidade Federal de Viçosa (UFV)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Foto Centrada Verticalmente (lado direito) -->
+            <div class="w-full md:w-1/2 flex items-center justify-center">
+                <div class="w-full rounded-md overflow-hidden shadow-lg max-h-[700px]">
+                    <img src="./Sobre.jpg" alt="Dra Marina em consultório" class="w-full h-auto object-cover object-center">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 05: Para Quem e SEÇÃO 06: Experiência (Unidas visualmente) -->
+    <section id="experiencia" class="py-24 px-6 lg:px-16 bg-creme">
+        <div class="max-w-6xl mx-auto">
+            
+            <div class="mb-20 text-center max-w-3xl mx-auto">
+                <h2 class="font-martel text-4xl md:text-5xl text-marsala mb-6">Para quem é esse cuidado?</h2>
+                <p class="font-chivo text-texto-light text-lg">Criamos um espaço seguro focado em você que:</p>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 text-left font-chivo text-texto">
+                    <div class="bg-white p-6 rounded-md shadow-sm border border-rosaclaro">Deseja cuidar da saúde de forma preventiva, antes que algo incomode.</div>
+                    <div class="bg-white p-6 rounded-md shadow-sm border border-rosaclaro">Quer entender melhor o próprio corpo e seus ciclos naturais.</div>
+                    <div class="bg-white p-6 rounded-md shadow-sm border border-rosaclaro">Está vivendo uma nova fase (como o climatério ou a menopausa) e busca orientação.</div>
+                    <div class="bg-white p-6 rounded-md shadow-sm border border-rosaclaro">Quer conversar sobre intimidade, sexualidade e contracepção com total liberdade.</div>
+                </div>
+            </div>
+
+            <div class="mt-24">
+                <h2 class="font-martel text-4xl md:text-5xl text-texto text-center mb-16">A sua experiência em consultório</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <!-- Cards de Experiência -->
+                    <div class="text-center group">
+                        <div class="w-16 h-16 mx-auto bg-rosaclaro rounded-full flex items-center justify-center mb-6 group-hover:bg-marsala transition-colors duration-300 text-marsala group-hover:text-creme">
+                            <!-- Ícone Planejamento -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <h3 class="font-martel text-xl mb-3 leading-snug">Planejamento reprodutivo e contraceptivo</h3>
+                        <p class="font-chivo text-sm text-texto-light">Orientações personalizadas para o planejamento da sua maternidade ou para a escolha do método contraceptivo ideal. Isso inclui a inserção de DIU e Implanon, garantindo eficácia e conforto, sempre respeitando as necessidades e desejos da paciente.</p>
+                    </div>
+                    
+                    <div class="text-center group">
+                        <div class="w-16 h-16 mx-auto bg-rosaclaro rounded-full flex items-center justify-center mb-6 group-hover:bg-marsala transition-colors duration-300 text-marsala group-hover:text-creme">
+                            <!-- Ícone Rotina -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                        </div>
+                        <h3 class="font-martel text-xl mb-3 leading-snug">Cuidado ginecológico de rotina</h3>
+                        <p class="font-chivo text-sm text-texto-light">A consulta ginecológica de rotina é essencial para a manutenção da sua saúde. São realizados exames preventivos, coleta de papanicolau e outros testes necessários para garantir a detecção precoce de doenças.</p>
+                    </div>
+
+                    <div class="text-center group">
+                        <div class="w-16 h-16 mx-auto bg-rosaclaro rounded-full flex items-center justify-center mb-6 group-hover:bg-marsala transition-colors duration-300 text-marsala group-hover:text-creme">
+                            <!-- Ícone Microscópio/Corrimento -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                        </div>
+                        <h3 class="font-martel text-xl mb-3 leading-snug">Exame de corrimento</h3>
+                        <p class="font-chivo text-sm text-texto-light">O exame de microscopia é essencial para análise de corrimentos e outras alterações, ajudando no diagnóstico de infecções e outras doenças ginecológicas.</p>
+                    </div>
+
+                    <div class="text-center group">
+                        <div class="w-16 h-16 mx-auto bg-rosaclaro rounded-full flex items-center justify-center mb-6 group-hover:bg-marsala transition-colors duration-300 text-marsala group-hover:text-creme">
+                            <!-- Ícone Menopausa -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                        </div>
+                        <h3 class="font-martel text-xl mb-3 leading-snug">Menopausa e climatério</h3>
+                        <p class="font-chivo text-sm text-texto-light">Acompanhamento de mulheres no período de transição para a menopausa, com foco em qualidade de vida, controle de sintomas e prevenção de doenças. Inclui a prescrição de terapias hormonais e não-hormonais, além de todo o cuidado que é essencial nessa fase para uma vida saudável e equilibrada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 07: FAQ -->
+    <section id="faq" class="py-24 px-6 lg:px-16 bg-rosaclaro">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <p class="font-rasa text-marsala tracking-widest uppercase text-sm mb-4">Dúvidas Frequentes</p>
+                <h2 class="font-martel text-4xl md:text-5xl text-texto mb-6">Para sua tranquilidade</h2>
+            </div>
+            
+            <!-- FAQ Accordion -->
+            <div class="bg-marsala rounded-md shadow-xl overflow-hidden">
+                
+                <!-- Pergunta 1 -->
+                <div class="border-b border-creme/20 last:border-0 overflow-hidden">
+                    <button class="w-full text-left px-6 py-5 flex items-center text-creme hover:bg-marsala-hover transition-colors focus:outline-none" onclick="toggleFaq(this)">
+                        <svg class="w-4 h-4 mr-4 transition-transform duration-300 transform flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/></svg>
+                        <span class="font-chivo font-semibold text-lg">Posso ser atendida on-line em ginecologia?</span>
+                    </button>
+                    <div class="max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out px-6 pl-14 text-rosaclaro font-chivo text-base leading-relaxed">
+                        <div class="pb-5">Sim. Dra Marina atende mulheres de todo o Brasil em consultas on-line. O atendimento é estruturado para garantir a mesma qualidade da consulta presencial: escuta atenta, orientações personalizadas e acompanhamento quando necessário.</div>
+                    </div>
+                </div>
+
+                <!-- Pergunta 2 -->
+                <div class="border-b border-creme/20 last:border-0 overflow-hidden">
+                    <button class="w-full text-left px-6 py-5 flex items-center text-creme hover:bg-marsala-hover transition-colors focus:outline-none" onclick="toggleFaq(this)">
+                        <svg class="w-4 h-4 mr-4 transition-transform duration-300 transform flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/></svg>
+                        <span class="font-chivo font-semibold text-lg">Quais exames e procedimentos são realizados na consulta presencial?</span>
+                    </button>
+                    <div class="max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out px-6 pl-14 text-rosaclaro font-chivo text-base leading-relaxed">
+                        <div class="pb-5">Inserção de DIU e Implanon, coleta de papanicolau, rastreio de ISTs e análise de corrimentos pela microscopia em consultório. Tudo feito com segurança, atenção e conforto.</div>
+                    </div>
+                </div>
+
+                <!-- Pergunta 3 -->
+                <div class="border-b border-creme/20 last:border-0 overflow-hidden">
+                    <button class="w-full text-left px-6 py-5 flex items-center text-creme hover:bg-marsala-hover transition-colors focus:outline-none" onclick="toggleFaq(this)">
+                        <svg class="w-4 h-4 mr-4 transition-transform duration-300 transform flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/></svg>
+                        <span class="font-chivo font-semibold text-lg">Dra Marina atende convênios?</span>
+                    </button>
+                    <div class="max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out px-6 pl-14 text-rosaclaro font-chivo text-base leading-relaxed">
+                        <div class="pb-5">Não, o atendimento é apenas particular, o que permite oferecer um cuidado mais completo e humanizado, com tempo adequado para ouvir sua história e elaborar um plano realmente individualizado. Sua primeira consulta terá uma duração entre 1h e 1h30min, com uma revisão programada para avaliar exames solicitados ou resposta a um tratamento (duração média de 20 minutos, no formato on-line, preferencialmente).</div>
+                    </div>
+                </div>
+
+                <!-- Pergunta 4 -->
+                <div class="border-b border-creme/20 last:border-0 overflow-hidden">
+                    <button class="w-full text-left px-6 py-5 flex items-center text-creme hover:bg-marsala-hover transition-colors focus:outline-none" onclick="toggleFaq(this)">
+                        <svg class="w-4 h-4 mr-4 transition-transform duration-300 transform flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/></svg>
+                        <span class="font-chivo font-semibold text-lg">Como posso agendar minha consulta?</span>
+                    </button>
+                    <div class="max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out px-6 pl-14 text-rosaclaro font-chivo text-base leading-relaxed">
+                        <div class="pb-5">Basta entrar em contato pelo WhatsApp, escolher se prefere a modalidade on-line ou presencial e o melhor horário para você. Também são disponibilizados horários flexíveis, inclusive noturnos e aos sábados.</div>
+                    </div>
+                </div>
+
+                <!-- Pergunta 5 -->
+                <div class="border-b border-creme/20 last:border-0 overflow-hidden">
+                    <button class="w-full text-left px-6 py-5 flex items-center text-creme hover:bg-marsala-hover transition-colors focus:outline-none" onclick="toggleFaq(this)">
+                        <svg class="w-4 h-4 mr-4 transition-transform duration-300 transform flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/></svg>
+                        <span class="font-chivo font-semibold text-lg">Por que eu deveria fazer uma consulta com a Dra Marina?</span>
+                    </button>
+                    <div class="max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out px-6 pl-14 text-rosaclaro font-chivo text-base leading-relaxed">
+                        <div class="pb-5">Mais do que tratar sintomas, ela oferece um cuidado integral, com foco em prevenção, orientação e acompanhamento contínuo para promover saúde e bem-estar. Sua consulta não acaba no consultório: você terá um atendimento pós-consulta por um canal exclusivo do WhatsApp, por onde receberá um plano de cuidados personalizado, além de diversos materiais educativos que vão contribuir para o seu cuidado em saúde.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 08: Contato -->
+    <section id="contato" class="py-24 px-6 lg:px-16 bg-marsala">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <!-- Informações de Contato -->
+            <div class="w-full md:w-1/2 text-creme">
+                <h2 class="font-martel text-4xl md:text-5xl font-bold mb-12">Contato</h2>
+                
+                <div class="space-y-8">
+                    <!-- Endereço -->
+                    <div class="flex items-start gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                        <p class="font-chivo text-lg leading-relaxed">R. Bernardino Brandão, 180 - Rosário, João Monlevade - Minas Gerais, CEP: 35930-156</p>
+                    </div>
+                    
+                    <!-- WhatsApp -->
+                    <div class="flex items-center gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+                        <p class="font-chivo text-lg">Whatsapp: (31) 99331-0246</p>
+                    </div>
+
+                    <!-- Horário -->
+                    <div class="flex items-center gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <p class="font-chivo text-lg">Segunda a sexta-feira de 08h às 18h</p>
+                    </div>
+
+                    <!-- Instagram -->
+                    <div class="flex items-center gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8a5 5 0 015-5h8a5 5 0 015 5v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8zm5-3a3 3 0 00-3 3v8a3 3 0 003 3h8a3 3 0 003-3V8a3 3 0 00-3-3H8zm7.597 2.214a1 1 0 011.003 1.002v.003a1 1 0 01-1.003.997 1 1 0 01-.997-.997v-.003a1 1 0 01.997-1.002zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6z" /></svg>
+                        <p class="font-chivo text-lg">@marinalimagineco</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mapa Google -->
+            <div class="w-full md:w-1/2 h-[400px] md:h-[450px] bg-white rounded-md shadow-xl overflow-hidden border-4 border-creme">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3744.179373981881!2d-43.17415172382103!3d-19.81666668146743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa507672288126b%3A0xe5a3c10928929e47!2sR.%20Bernardino%20Brand%C3%A3o%2C%20180%20-%20Ros%C3%A1rio%2C%20Jo%C3%A3o%20Monlevade%20-%20MG%2C%2035930-156!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 09: CTA Final -->
+    <section class="py-32 px-6 lg:px-16 bg-creme text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="font-martel text-5xl md:text-6xl text-marsala mb-6">Seu cuidado também pode ser uma forma de liberdade.</h2>
+            <p class="font-chivo text-texto-light text-lg mb-12 opacity-90">Vamos juntas cuidar da sua saúde e do seu bem-estar?</p>
+            <a href="https://wa.me/5531993310246" class="bg-marsala text-creme px-10 py-4 rounded-md text-sm font-bold tracking-widest uppercase hover:bg-marsala-hover transition-colors inline-block shadow-xl">
+                Comece aqui (31) 99331-0246
+            </a>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-texto text-creme py-12 px-6 lg:px-16">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <p class="font-martel text-2xl mb-1">Dra. Marina Lima</p>
+                <p class="font-chivo text-sm text-creme/60">Ginecologista • CRM-MG 80814 | RQE 66710</p>
+                <p class="font-chivo text-sm text-creme/60 mt-1">João Monlevade — MG</p>
+            </div>
+            
+            <div class="flex gap-6">
+                <a href="https://instagram.com/marinalimagineco" target="_blank" class="text-creme/80 hover:text-creme transition-colors font-chivo text-sm flex items-center gap-2">
+                    Instagram @marinalimagineco
+                </a>
+            </div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto mt-12 pt-6 border-t border-creme/20 text-center font-chivo text-xs text-creme/40">
+            <p>As informações contidas neste site têm caráter puramente informativo e não substituem a avaliação médica presencial.</p>
+            <p class="mt-2">&copy; 2026 Dra. Marina Lima. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script para Accordion (Dúvidas Frequentes) -->
+    <script>
+        function toggleFaq(btn) {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector('svg');
+            
+            // Fecha as outras perguntas para manter limpo (Opcional)
+            const allContents = document.querySelectorAll('#faq .max-h-\\[1000px\\]');
+            const allIcons = document.querySelectorAll('#faq svg.rotate-90');
+            
+            allContents.forEach(c => {
+                if(c !== content) {
+                    c.classList.remove('max-h-[1000px]', 'opacity-100');
+                    c.classList.add('max-h-0', 'opacity-0');
+                }
+            });
+            allIcons.forEach(i => {
+                if(i !== icon) {
+                    i.classList.remove('rotate-90');
+                }
+            });
+
+            // Abre ou fecha a pergunta clicada
+            if (content.classList.contains('max-h-0')) {
+                content.classList.remove('max-h-0', 'opacity-0');
+                content.classList.add('max-h-[1000px]', 'opacity-100');
+                icon.classList.add('rotate-90');
+            } else {
+                content.classList.add('max-h-0', 'opacity-0');
+                content.classList.remove('max-h-[1000px]', 'opacity-100');
+                icon.classList.remove('rotate-90');
+            }
+        }
+    </script>
+
+</body>
+</html>
